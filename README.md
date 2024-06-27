@@ -59,3 +59,16 @@
   ```js
   import(/* webpackChunkName:'', webpackPrefetch: true */ 'a');
   ```
+
+# 代码分割
+
+- 每个入口是一个 chunk
+- 动态代码块 import()
+- splitChunkPlugin
+
+> vendors-node_modules_jquery_dist_jquery_js
+> vendors-node_modules_lodash_lodash_js
+> page1.js page1.js module1.js module2.js
+> page2.js page2.js module1.js module2.js
+> page3.js page3.js module1.js module3.js
+> asyncModule1.js asyncModule1.js
