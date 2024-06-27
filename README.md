@@ -43,3 +43,19 @@
 - 清除无用的 css
   - purgecss-webpack-plugin
 - Tree Shaking
+
+# 运行速度优化
+
+- 代码分割
+
+  - 入口点分割
+  - 懒加载
+  - prefetch
+  - 提取公共代码
+
+  > preload 预加载，此资源肯定会用到，优先较高，需求提前获取，它要慎用，有可能有性能隐患
+  > prefetch 预获取，此资源在以后可能会用到，它是在浏览器空闲的时候加载，没有性能问题
+
+  ```js
+  import(/* webpackChunkName:'', webpackPrefetch: true */ 'a');
+  ```
