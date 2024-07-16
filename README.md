@@ -72,3 +72,11 @@
 > page2.js page2.js module1.js module2.js
 > page3.js page3.js module1.js module3.js
 > asyncModule1.js asyncModule1.js
+
+# sideEffects
+
+```json
+"sideEffects": [
+"*.css"
+],
+```

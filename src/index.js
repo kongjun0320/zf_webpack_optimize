@@ -1,7 +1,5 @@
-import function1 from './func1';
-import function2 from './func2';
-
-import './index.css';
-
-function1();
-function2();
+document.getElementById('video').addEventListener('click', () => {
+  import(/* webpackPrefetch: true */ './title').then((res) => {
+    console.log(res.default);
+  });
+});

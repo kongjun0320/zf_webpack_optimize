@@ -1,11 +1,5 @@
-import module1 from './module1';
-import module2 from './module2';
+import _ from 'lodash';
 import $ from 'jquery';
 
-console.log(module1, module2, $);
-
-import(/* webpackChunkName: 'asyncModule1' */ './asyncModule1').then(
-  (result) => {
-    console.log(result);
-  }
-);
+console.log(_);
+console.log($);
